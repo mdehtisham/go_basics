@@ -4,7 +4,8 @@ import "fmt"
 
 func main() {
 	fmt.Println("hello world")
-	valuesInGo()
+	// valuesInGo()
+	forLoop()
 }
 
 func valuesInGo() {
@@ -18,4 +19,10 @@ func valuesInGo() {
 	fmt.Println(true && false)
 	fmt.Println(true || false)
 	fmt.Println(!true)
+}
+
+func forLoop() {
+	for i := 0; i < 5; i++ {
+		fmt.Println("index is : ", i)
+	}
 }
