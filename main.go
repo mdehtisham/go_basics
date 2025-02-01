@@ -29,10 +29,20 @@ func forLoop() {
 }
 
 func mapExample() {
+	// Declare a map using make
 	var identityMap = make(map[string]string)
 	identityMap["name"] = "Ehtisham"
 	identityMap["age"] = "30"
 	identityMap["Student"] = "true"
 	fmt.Println(identityMap)
+
+	// // Declare a map using map literal
+	m2 := map[string]int{
+		"apple":  5,
+		"orange": 10,
+	}
+	fmt.Println(m2)
+	delete(m2, "apple")
+	fmt.Println(m2)
 
 }
