@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("hello world")
+	// fmt.Println("hello world")
 	// valuesInGo()
-	forLoop()
+	// forLoop()
+	mapExample()
 }
 
 func valuesInGo() {
@@ -25,4 +26,13 @@ func forLoop() {
 	for i := 0; i < 5; i++ {
 		fmt.Println("index is : ", i)
 	}
+}
+
+func mapExample() {
+	var identityMap = make(map[string]string)
+	identityMap["name"] = "Ehtisham"
+	identityMap["age"] = "30"
+	identityMap["Student"] = "true"
+	fmt.Println(identityMap)
+
 }
