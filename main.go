@@ -9,8 +9,9 @@ func main() {
 	// fmt.Println("hello world")
 	// valuesInGo()
 	// forLoop()
-	mapUtil.MapExample()
-	mapUtil.CreateMixedMap()
+	// mapUtil.MapExample()
+	// mapUtil.CreateMixedMap()
+	mapUtil.PrintPerson(createPerson())
 }
 
 func valuesInGo() {
@@ -30,4 +31,15 @@ func forLoop() {
 	for i := 0; i < 5; i++ {
 		fmt.Println("index is : ", i)
 	}
+}
+
+func createPerson() mapUtil.Person {
+	var p1 mapUtil.Person
+	fmt.Print("Enter Name: ")
+	fmt.Scanln(&p1.Name)
+	fmt.Print("Enter Age: ")
+	fmt.Scanln(&p1.Age)
+	fmt.Print("Enter Gender: ")
+	fmt.Scanln(&p1.Gender)
+	return p1
 }
