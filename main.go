@@ -8,10 +8,10 @@ import (
 func main() {
 	// fmt.Println("hello world")
 	// valuesInGo()
-	// forLoop()
+	forLoop()
 	// mapUtil.MapExample()
 	// mapUtil.CreateMixedMap()
-	mapUtil.PrintPerson(createPerson())
+	// mapUtil.PrintPerson(createPerson())
 }
 
 func valuesInGo() {
@@ -28,8 +28,15 @@ func valuesInGo() {
 }
 
 func forLoop() {
-	for i := 0; i < 5; i++ {
-		fmt.Println("index is : ", i)
+	// for i := 0; i < 5; i++ {
+	// 	fmt.Println("index is : ", i)
+	// }
+	// range for loop
+	for n := range 6 {
+		if n%2 == 0 {
+			continue
+		}
+		fmt.Println("range", n)
 	}
 }
 
