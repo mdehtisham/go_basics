@@ -78,3 +78,10 @@ func CreateMixedMap() {
 		fmt.Printf("Key: %s, Value: %v and type is %T\n", key, value, value)
 	}
 }
+
+/*
+When two or more consecutive named function parameters share a type, you can omit the type from all but the last.
+*/
+func Add(x, y int) int {
+	return x + y
+}
