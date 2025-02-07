@@ -19,10 +19,11 @@ But it is good style to use the factored import statement.
 func main() {
 	// fmt.Println("hello world")
 	// valuesInGo()
-	forLoop()
+	// forLoop()
 	// mapUtil.MapExample()
 	// mapUtil.CreateMixedMap()
 	// mapUtil.PrintPerson(createPerson())
+	fmt.Println(mapUtil.Add(4, 7))
 }
 
 func valuesInGo() {
