@@ -85,3 +85,17 @@ When two or more consecutive named function parameters share a type, you can omi
 func Add(x, y int) int {
 	return x + y
 }
+
+/*
+Multiple results
+A function can return any number of results.
+
+The swap function returns two strings.
+*/
+func swap(x, y string) (string, string) {
+	return y, x
+}
+func UsingSwap() {
+	a, b := swap("hello", "world")
+	fmt.Println(a, b)
+}
