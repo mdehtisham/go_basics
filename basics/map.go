@@ -21,6 +21,12 @@ When importing a package, you can refer only to its exported names. Any "unexpor
 
 */
 
+/*
+The var statement declares a list of variables; as in function argument lists, the type is last.
+
+A var statement can be at package or function level. We see both in this example.
+*/
+
 func MapExample() {
 	// Declare a map using make
 	var identityMap = make(map[string]string)
