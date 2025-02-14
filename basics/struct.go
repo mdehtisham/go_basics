@@ -15,3 +15,22 @@ type Person struct {
 func PrintPerson(p Person) {
 	fmt.Printf("Name: %s, Age: %d, Gender: %s\n", p.Name, p.Age, p.Gender)
 }
+
+/*
+
+How do you create an instance of a struct?
+Answer: You can create an instance of a struct in several ways:
+
+Using field names:
+p := Person{Name: "Alice", Age: 25}
+
+
+Without field names (positional):
+p := Person{"Alice", 25}
+
+Using the new keyword (returns a pointer):
+p := new(Person)
+p.Name = "Alice"
+p.Age = 25
+
+*/
