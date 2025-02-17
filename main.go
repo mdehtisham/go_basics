@@ -23,7 +23,8 @@ func main() {
 	// mapUtil.MapExample()
 	// mapUtil.CreateMixedMap()
 	// mapUtil.PrintPerson(createPerson())
-	fmt.Println(mapUtil.Add(4, 7))
+	// fmt.Println(mapUtil.Add(4, 7))
+	mapUtil.SwitchExample()
 }
 
 func valuesInGo() {
