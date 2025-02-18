@@ -24,7 +24,8 @@ func main() {
 	// mapUtil.CreateMixedMap()
 	// mapUtil.PrintPerson(createPerson())
 	// fmt.Println(mapUtil.Add(4, 7))
-	mapUtil.SwitchExample()
+	// mapUtil.SwitchExample()
+	mapUtil.WhenIsSaturday()
 }
 
 func valuesInGo() {
