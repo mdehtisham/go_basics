@@ -190,3 +190,17 @@ b = b[:cap(b)] // len(b)=5, cap(b)=5
 b = b[1:]      // len(b)=4, cap(b)=4
 
 */
+
+func makeSlice() {
+	a := make([]int, 5)
+	printSlice(a)
+
+	b := make([]int, 0, 5)
+	printSlice(b)
+
+	c := b[:2]
+	printSlice(c)
+
+	d := c[2:5]
+	printSlice(d)
+}
