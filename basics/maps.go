@@ -28,3 +28,15 @@ func mapExample() {
 Map literals
 Map literals are like struct literals, but the keys are required.
 */
+type mapVertex struct {
+	Lat, Long float64
+}
+
+var mp = map[string]mapVertex{
+	"Bell Labs": mapVertex{
+		40.68433, -74.39967,
+	},
+	"Google": mapVertex{
+		37.42202, -122.08408,
+	},
+}
