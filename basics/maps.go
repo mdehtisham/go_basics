@@ -95,3 +95,17 @@ func mutatingMaps() {
 	v, ok := m["Answer"]
 	fmt.Println("The value:", v, "Present?", ok)
 }
+
+/*
+Exercise: Maps
+Implement WordCount. It should return a map of the counts of each “word” in the string s. The wc.Test function runs a test suite against the provided function and prints success or failure.
+
+You might find strings.Fields helpful.
+*/
+func WordCount(s string) map[string]int {
+	words := make(map[string]int)
+	for _, word := range s {
+		words[string(word)]++
+	}
+	return words
+}
