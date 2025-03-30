@@ -11,6 +11,7 @@ Functions are values too. They can be passed around just like other values.
 
 Function values may be used as function arguments and return values.
 */
+
 func compute(fn func(float64, float64) float64) float64 {
 	return fn(3, 4)
 }
