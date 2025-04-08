@@ -23,16 +23,15 @@ func (v MethodsVertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
-func useAbs() {
-	v := MethodsVertex{3, 4}
-	// Struct type method
-	abs := v.Abs()
-	fmt.Println(abs)
-}
-
 /*
 Methods are functions
 Remember: a method is just a function with a receiver argument.
 
 Here's Abs written as a regular function with no change in functionality..
 */
+func useAbs() {
+	v := MethodsVertex{3, 4}
+	// Struct type method
+	abs := v.Abs()
+	fmt.Println(abs)
+}
