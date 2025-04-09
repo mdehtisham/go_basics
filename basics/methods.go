@@ -23,6 +23,12 @@ func (v MethodsVertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
+/*
+Methods are functions
+Remember: a method is just a function with a receiver argument.
+
+Here's Abs written as a regular function with no change in functionality..
+*/
 func useAbs() {
 	v := MethodsVertex{3, 4}
 	// Struct type method
@@ -31,8 +37,9 @@ func useAbs() {
 }
 
 /*
-Methods are functions
-Remember: a method is just a function with a receiver argument.
+You can declare a method on non-struct types, too.
 
-Here's Abs written as a regular function with no change in functionality..
+In this example we see a numeric type MyFloat with an Abs method.
+
+You can only declare a method with a receiver whose type is defined in the same package as the method. You cannot declare a method with a receiver whose type is defined in another package (which includes the built-in types such as int).
 */
