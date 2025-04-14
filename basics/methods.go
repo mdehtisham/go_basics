@@ -59,9 +59,9 @@ func methodOnNonStruct() {
 	fmt.Println(f.Abs())
 }
 
-
 /*
 Pointer receivers
 You can declare methods with pointer receivers.
 
 This means the receiver type has the literal syntax *T for some type T. (Also, T cannot itself be a pointer such as *int.)
+*/
