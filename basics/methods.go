@@ -64,4 +64,10 @@ Pointer receivers
 You can declare methods with pointer receivers.
 
 This means the receiver type has the literal syntax *T for some type T. (Also, T cannot itself be a pointer such as *int.)
+
+For example, the Scale method here is defined on *Vertex.
+
+Methods with pointer receivers can modify the value to which the receiver points (as Scale does here). Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
+
+
 */
