@@ -75,3 +75,22 @@ With a value receiver, the Scale method operates on a copy of the original Verte
 
 
 */
+
+type PointerReceiverVertex struct {
+	X, Y float64
+}
+
+func (v PointerReceiverVertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+func (v *PointerReceiverVertex) Scale(f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}
+
+func PointerReceiverVertexMain() {
+	v := PointerReceiverVertex{3, 4}
+	v.Scale(10)
+	fmt.Println(v.Abs())
+}
