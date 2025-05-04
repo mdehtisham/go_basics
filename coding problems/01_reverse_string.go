@@ -11,9 +11,7 @@ Sample Output: "olleh"
 
 package main
 
-import "fmt"
-
-func reverseString(s string) string {
+func ReverseString(s string) string {
 	// Convert string to a slice of runes (to handle Unicode characters)
 	runes := []rune(s)
 
@@ -26,10 +24,10 @@ func reverseString(s string) string {
 	return string(runes)
 }
 
-func main() {
-	input := "hello"
-	fmt.Println("Reversed:", reverseString(input)) // Output: "olleh"
-}
+// func main() {
+// 	input := "hello"
+// 	fmt.Println("Reversed:", ReverseString(input)) // Output: "olleh"
+// }
 
 /*
 Explanation:
