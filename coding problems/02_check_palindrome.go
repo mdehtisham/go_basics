@@ -22,3 +22,12 @@ func main() {
 	fmt.Println(isPalindrome("madam")) // true
 	fmt.Println(isPalindrome("hello")) // false
 }
+
+/*
+Explanation:
+
+String Comparison: Go allows direct comparison of strings using ==.
+
+Function Reuse: The reverseString function from Problem 1 is reused here.
+
+Case Sensitivity: This solution is case-sensitive (e.g., "Madam" would return false).*/
