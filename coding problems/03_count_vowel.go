@@ -31,3 +31,13 @@ func main() {
 	input := "Hello World!"
 	fmt.Println("Vowel count:", countVowels(input)) // Output: 3
 }
+
+/*
+Explanation:
+
+Map for Lookups: A map[rune]bool stores vowels for O(1) membership checks.
+
+Case Insensitivity: unicode.ToLower(c) converts characters to lowercase to handle both A and a as vowels.
+
+Rune Iteration: Iterating over s using range gives each Unicode character as a rune.
+*/
