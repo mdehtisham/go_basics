@@ -34,3 +34,13 @@ func main() {
 	fmt.Println(isAnagram("listen", "silent")) // true
 	fmt.Println(isAnagram("hello", "world"))   // false
 }
+
+/*
+Explanation:
+
+Sorting Slices: sort.Slice sorts a slice in-place using a custom comparison function.
+
+Rune Slices: Convert strings to []rune to handle Unicode characters during sorting.
+
+Efficiency: Sorting takes O(n log n) time, but it’s a clean approach for anagram checks.
+*/
